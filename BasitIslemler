@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class islem {
+
+	public static void main(String[] args) {
+		int [] dizi = new int[3];
+		Scanner sc = new Scanner(System.in);
+		for(int k=1;k<3;k++){
+		System.out.println ( "Lutfen " +k+ " 'ci sayıyı giriniz:  ");
+		dizi[k]=sc.nextInt();
+
+	}
+
+		System.out.println (  "Toplam : " + Math.addExact(dizi[1],dizi[2]));
+		System.out.println (  "Fark   : " + Math.subtractExact(dizi[1],dizi[2]) );
+		System.out.println (  "Çarpım : " + Math.multiplyExact(dizi[1],dizi[2]) );
+		System.out.println (  "Kalan : "  + Math.floorMod(dizi[1],dizi[2]) );
+
+		
+}}
+
+
